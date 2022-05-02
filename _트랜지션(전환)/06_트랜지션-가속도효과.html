@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>트랜지션-가속도효과</title>
+</head>
+<style>
+       *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        background-image: url(http://wooreeweb.com/img/grid.gif);
+    }
+    #wrap{
+        width: 400px;
+        height: 600px;
+        background-color: silver;
+    }
+    div{
+        width: 0;
+        height: 100px;
+        background-color: gold;
+    }
+    #wrap:hover > div {width: 400px;}
+    #wrap:hover > #box1 {background-color: red;}
+    #wrap:hover > #box2 {background-color: orange;}
+    #wrap:hover > #box3 {background-color: yellow;}
+    #wrap:hover > #box4 {background-color: green;}
+    #wrap:hover > #box5 {background-color: blue;}
+    #wrap:hover > #box6 {background-color: navy;}
+    </style>
+    <style>
+        div{
+            transition: all 3s;
+        }
+        #box1 { transition-timing-function: linear;}
+/*        일정한 속도로 변화*/
+        #box2 { transition-timing-function: ease; }/*가속도 효과 기본값*/
+        #box3 { transition-timing-function: ease-in;}
+/*        서서히 시작해서 빨라짐*/
+        #box4 { transition-timing-function: ease-out;}
+/*        빠르게 시작*/
+        #box5 { transition-timing-function: ease-in-out;}
+/*        부드럽게 시작해서 부드럽게 끝남*/
+        #box6 { transition-timing-function: cubic-bezier(.74,.23,.83,.67);}
+/*        https://cubic-bezier.com/*/
+    </style>
+<body>
+    
+    <!-- section[id=wrap]>div[id=box$]*6
+   or    section#wrap>div#box$*6  -->
+    <section id="wrap">
+        <div id="box1"></div>
+        <div id="box2"></div>
+        <div id="box3"></div>
+        <div id="box4"></div>
+        <div id="box5"></div>
+        <div id="box6"></div>
+    </section>
+    
+</body>
+</html>

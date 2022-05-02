@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>z-index</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        background-image: url(http://wooreeweb.com/img/grid.gif)
+    }
+    #wrap{
+        width: 600px;
+        height: 400px;
+        position: relative;
+        top: 50px;
+        margin: 0 auto;
+        border: 5px solid black;
+        overflow: hidden;
+    }
+    #wrap img{
+        width: 100%;
+        height: 100%;
+        /*************/
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    #wrap h2{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    </style>
+<body>
+    <div id="wrap"><h2>h2 TEXT</h2><img src="http://wooreeweb.com/img/h05.jpg" alt=""></div>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>레이아웃 제작</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    ul { list-style: none; }
+    
+    .header,
+    .footer {
+      background-color: black;
+      color: white;
+      padding: 20px;
+    }
+    
+    .container .nav { width: 25%; }
+    .container .content { width: 75%; }
+    
+    .container .nav ul li {
+      background-color: #3cf;
+      color: white;
+      padding: 10px;
+      border-bottom: 1px solid #eee;
+    }
+    .container .nav ul li:last-child { border-bottom: none; }
+    
+    .container .nav,
+    .container .content { float: left; padding: 10px; }
+    
+    .container:after {
+      content: '';
+      clear: both;
+      display: block;
+    }
+    
+    .container .nav ul li:hover { background-color: #137291; }
+  </style>
+</head>
+<body>
+  <!--헤더 영역-->
+  <div class="header">
+    <h1>LOGO</h1>
+  </div>
+  
+  <!--컨텐츠 영역(사이드 내비게이션 + 컨텐츠-->
+  <div class="container">
+    <!--사이드 내비게이션-->
+    <div class="nav">
+      <!--ul>(li{메뉴$})*4-->
+      <ul>
+        <li>메뉴1</li>
+        <li>메뉴2</li>
+        <li>메뉴3</li>
+        <li>메뉴4</li>
+      </ul>
+    </div>
+    
+    <!--컨텐츠-->
+    <div class="content">
+      <h2>제목/슬로건</h2>
+      <!--(lorem>p)*2-->      
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus architecto maiores reiciendis amet nulla! Illum odio delectus vitae impedit voluptatibus repellendus minima, eligendi incidunt illo, architecto, excepturi itaque iusto omnis.</p>
+      <p>Distinctio quidem sunt, animi aspernatur iusto cupiditate nesciunt error, est cum, possimus veritatis. Quis, commodi, odio. Blanditiis quod saepe eligendi, perferendis deleniti. Earum exercitationem architecto nemo veritatis saepe error doloremque?</p>
+    </div>
+  </div>
+  
+  <!--푸터영역-->
+  <div class="footer">
+    <h3>copyright</h3>
+  </div>
+</body>
+</html>

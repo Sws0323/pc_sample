@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>이미지 필터 함수</title>
+</head>
+<style>
+    img {
+        width: 300px;
+    }
+
+    figure {
+        float: left;
+    }
+
+    figcaption {
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+</style>
+<style>
+    .ft {
+        filter: drop-shadow(1px 2px 4px #333);
+        /*                가로 세로 흐림도 색상            */
+    }
+</style>
+
+<body>
+    <figure>
+        <figcaption>원본</figcaption>
+        <img src="http://wooreeweb.com/img/s07.jpg" alt="">
+    </figure>
+    <figure>
+        <figcaption>필터 적용</figcaption>
+        <img src="http://wooreeweb.com/img/s07.jpg" class="ft" alt="">
+    </figure>
+</body></html>

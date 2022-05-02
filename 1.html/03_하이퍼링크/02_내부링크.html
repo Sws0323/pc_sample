@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>내부 링크</title>
+</head>
+<style>
+    h3 {
+        height: 800px;
+    }
+
+    a {
+        text-decoration-line: none
+    }
+
+    li {
+        list-style: none;
+    }
+
+    nav {
+        margin-bottom: 800px;
+    }
+
+    #tbtn {
+        position: fixed;
+        bottom: 50px;
+        right: 50px;
+        line-height: 50px;
+        text-align: center;
+        display: block;
+        height: 50px;
+        width: 50px;
+        background-color: rgb(0, 0, 0, 0.5);
+        color: #fff;
+    }
+</style>
+
+<body>
+    <h2>내부링크 - 현재 페이지의 특징 부분으로 이동</h2>
+    <hr>
+    <!--최상위 영역-->
+    <!--#top-->
+    <div id="top">여기가 페이지의 시작부분</div>
+    <!--    내비게이션-->
+    <nav>
+        <ul>
+            <li><a href="#pinfo">상품정보</a></li>
+            <li><a href="#pdes">상세설명</a></li>
+            <li><a href="#review">사용자 리뷰</a></li>
+            <li><a href="#qa">묻고 답하기</a></li>
+            <li><a href="#sinfo">판매자 정보</a></li>
+        </ul>
+    </nav>
+    <hr>
+
+    <h3 id="pinfo">상품정보</h3>
+    <hr>
+    <h3 id="pdes">상세설명</h3>
+    <hr>
+    <h3 id="review">사용자리뷰</h3>
+    <hr>
+    <h3 id="qa">묻고 답하기</h3>
+    <hr>
+    <h3 id="sinfo">판매자 정보</h3>
+    <!--    TOP 버튼-->
+    <a href="#top" id="tbtn">TOP</a>
+</body></html>

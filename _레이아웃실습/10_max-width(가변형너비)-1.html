@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>가변형너비</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        background-image: url(http://wooreeweb.com/img/grid.gif)
+    }
+    div{
+        margin: 20px auto;
+        border: 5px solid crimson;
+        box-sizing: border-box;
+    }
+    .box1{
+        width: 800px;
+    }
+    .box2{
+        max-width: 800px;
+    }
+    </style>
+<body>
+    <div class="box1">너비 800px 지정</div>
+    <div class="box2">너비 800px 가변 지정</div>
+</body>
+</html>

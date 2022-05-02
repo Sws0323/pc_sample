@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>레이아웃</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background-image: url(http://wooreeweb.com/img/grid.gif);
+    }
+
+    p {
+        height: 50px;
+        background-color: rgba(255, 215, 0, 0.3);
+    }
+
+    #box {
+        width: 200px;
+        height: 150px;
+        background-color: rgba(220, 20, 60, 0.4);
+        /*******************************************/
+        position: absolute;
+        /*부모요소를 기준으로 위치를 잡는다 (절대적인 위치속성) 겹침현상이 발생함*/
+        top: 0;
+        left: 0;
+    }
+</style>
+
+<body>
+    <p>블럭요소 p</p>
+    <div id="box">#box</div>
+</body></html>

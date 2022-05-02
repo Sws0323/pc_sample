@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>float</title>
+</head>
+<style>
+    #container{
+        width: 100%;
+        border: 5px solid black;
+    }
+    .box1,
+    .box2 {
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+        border: 5px solid crimson;
+        box-sizing: border-box;
+        /**************************************/
+        float: none;
+    }
+
+    .box3 {
+        border: 5px solid #06f;
+        /**************************************/
+    }
+
+</style>
+
+<body>
+    <h2>float 시 부모 요소에 영향을 주는 경우</h2>
+    <hr>
+    <!--    div[class=box$]{box$}*2-->
+    <div id="container">
+        <div class="box1">box1</div>
+        <div class="box2">box2</div>
+    </div>
+    <div class="box3">box3</div>
+</body></html>

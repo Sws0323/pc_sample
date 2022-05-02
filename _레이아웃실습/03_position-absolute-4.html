@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>레이아웃</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background-image: url(http://wooreeweb.com/img/grid.gif);
+        height: 2000px;
+    }
+
+    p {
+        height: 50px;
+        background-color: rgba(255, 215, 0, 0.3);
+    }
+
+    #box {
+        width: 200px;
+        height: 150px;
+        background-color: rgba(220, 20, 60, 0.4);
+        /*******************************************/
+        position: absolute;
+        /*스크롤의 영향을 받음*/
+        bottom: 0;
+        right: 0;
+    }
+</style>
+
+<body>
+    <p>블럭요소 p</p>
+    <div id="box">#box</div>
+</body></html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>트랜지션-대기후전환</title>
+</head>
+<style>
+       *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        background-image: url(http://wooreeweb.com/img/grid.gif);
+    }
+    #wrap{
+        width: 400px;
+        height: 600px;
+        background-color: silver;
+    }
+    div{
+        width: 0;
+        height: 100px;
+        background-color: gold;
+    }
+    #wrap:hover > div {width: 400px;}
+    #wrap:hover > #box1 {background-color: red;}
+    #wrap:hover > #box2 {background-color: orange;}
+    #wrap:hover > #box3 {background-color: yellow;}
+    #wrap:hover > #box4 {background-color: green;}
+    #wrap:hover > #box5 {background-color: blue;}
+    #wrap:hover > #box6 {background-color: navy;}
+    </style>
+    <style>
+        div{
+            transition: all 3s;
+        }
+        #box1 { transition-delay: 0s; }
+        #box2 { transition-delay: 1s; }
+        #box3 { transition-delay: 2s; }
+        #box4 { transition-delay: 3s; }
+        #box5 { transition-delay: 4s; }
+        #box6 { transition-delay: 5s; }
+    </style>
+<body>
+    
+    <!-- section[id=wrap]>div[id=box$]*6
+   or    section#wrap>div#box$*6  -->
+    <section id="wrap">
+        <div id="box1"></div>
+        <div id="box2"></div>
+        <div id="box3"></div>
+        <div id="box4"></div>
+        <div id="box5"></div>
+        <div id="box6"></div>
+    </section>
+    
+</body>
+</html>

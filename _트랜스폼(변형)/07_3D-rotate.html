@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>07_3D-rotate</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background: url(http://wooreeweb.com/img/grid.gif);
+    }
+
+    div {
+        width: 200px;
+        height: 200px;
+        box-sizing: border-box;
+        margin: 100px;
+        float: left;
+        border: 5px solid #f00;
+    }
+
+    div p {
+        width: 100%;
+        height: 100%;
+        background: blue;
+        opacity: 0.3;
+        font: bold 60px arial;
+        color: #fff;
+    }
+</style>
+<style>
+     div:nth-child(1) p {
+         transform: rotateX(45deg);
+    }
+    div:nth-child(2) p {
+      transform: rotateY(45deg);
+    }
+
+    div:nth-child(3) p {
+   transform: rotateZ(45deg);
+    }
+    div{
+        perspective: 400px;
+/*        상대값 이므로 여기선 p태그의 대한 상대값이다*/
+    }
+</style>
+
+<body>
+<div>
+    <p>BOX1</p>
+</div>
+<div>
+    <p>BOX2</p>
+</div>
+<div>
+    <p>BOX3</p>
+</div>
+</body></html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>트랜지션-활용-배경</title>
+</head>
+<style>
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    #frame {
+        width: 1200px;
+        height: 500px;
+        margin: 100px auto;
+        position: relative;
+        background-color: black;
+        background-image: url(http://wooreeweb.com/img/cass0.png),
+            url(http://wooreeweb.com/img/cass1.png),
+            url(http://wooreeweb.com/img/cass2.png),
+            url(http://wooreeweb.com/img/cass3.png),
+            url(http://wooreeweb.com/img/cass4.png),
+            url(http://wooreeweb.com/img/cass5.png);
+        background-repeat: no-repeat;
+        background-position:
+            20px 20px,
+            550px bottom,
+            -100% bottom,
+            60px 40px,
+            200% 40px,
+            0px 0px;
+        transition: all 0.4s;
+    }
+</style>
+<style>
+    #frame:hover {
+        background-position:
+            20px 20px,
+            200% 0px,
+            -200% bottom,
+            600px bottom,
+            150px 200px,
+            0px 0px;
+    }
+</style>
+
+<body>
+    <div id="frame"></div>
+</body></html>

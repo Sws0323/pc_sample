@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>폼</title>
+</head>
+<body>
+    <h3>기본 사용법</h3>
+    <hr>
+    <form action="#">
+        <p>
+            <label for="id">사용자명 :</label>
+            <input type="text" name="uid" size="5" maxlength="10" id="id">
+<!--            size 기본20-->
+        </p>
+        <p>
+            <label for="">autofocus :</label>
+            <input type="text" autofocus>
+        </p>
+        <p>
+            <label for="">자동완성기능(on/off/default) :</label>
+            <input type="text" autocomplete="off">
+        </p>
+    </form>
+    <hr>
+    <ul>
+        <li>input : 입력을 위한 태그</li>
+        <li>type="text" : 텍스트 상자</li>
+        <li>name="uid" : 서버의 데이터베이스 필드 이름</li>
+        <li>size="15" : 텍스트 상자의 너비(기본값은 20)</li>
+        <li>maxlength="10" : 입력가능한 최대 글자수는 10글자</li>
+        <li>minlength="3" : 입력 가능한 최소 글자수는 3글자</li>
+        <li>label : 폼 태그에 라벨을 붙이는 역할</li>
+        <li>for="ID값" : 폼 요소의 아이디(ID)와 연동</li>
+    </ul>
+</body>
+</html>

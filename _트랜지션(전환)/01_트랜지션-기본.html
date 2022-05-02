@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>트랜지션-기본</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        background-image: url(http://wooreeweb.com/img/grid.gif);
+    }
+    div{
+        width: 100px;
+        height: 100px;
+        background-color: gold;
+    }
+    div:hover{
+        width: 200px;
+        background-color: crimson;
+    }
+    </style>
+    <style>
+/*        트랜지션은 중간과정을 만들어주는 속성 적용할 대상과 시간이 필요*/
+        div{
+            transition-property: width;
+/*            트랜지션을 적용할 속성 (처음상태에 적용)*/
+            transition-duration: 2s;
+/*            적용할 트랜지션이 적용될 시간*/
+        }
+    </style>
+<body>
+    <div id="box"></div>
+</body>
+</html>

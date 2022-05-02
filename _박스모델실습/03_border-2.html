@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>박스모델-border</title>
+</head>
+<style>
+           * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background-image: url('http://wooreeweb.com/img/grid.gif');
+    }
+    div{
+        width: 100px;
+        height: 100px;
+        background-color: pink;
+        border: 5px solid transparent;
+        margin: 10px;     
+/*        transparent 투명 */
+    }
+    
+    .box1{
+        border-top-color:cyan;
+    }
+    .box2{
+        border-right-color: yellowgreen;
+    }
+    .box3{
+        border-bottom-color: orangered;
+    }
+    
+    .box4{
+        border-left-color: slateblue;
+    }
+    .box5{
+        border-color:  black gray red goldenrod;
+    }
+    </style>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+    <div class="box5"></div>
+</body>
+</html>

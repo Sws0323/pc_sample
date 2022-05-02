@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>레이아웃</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background-image: url(http://wooreeweb.com/img/grid.gif);
+    }
+
+    p {
+        height: 50px;
+        background-color: rgba(255, 215, 0, 0.3);
+    }
+
+    #parent {
+        width: 300px;
+        height: 300px;
+        border: 3px solid #09f;
+        box-sizing: border-box;
+        /*margin: 50px auto;
+        ------margin속성 제거*/
+        position: absolute;
+        left: 50%;
+        margin-left: -150px;
+        /* left: calc(50% - 150px) */
+        top: 50%;
+        margin-top: -150px;
+    }
+    /*  calc(50% - 150px); O */
+    /*  calc(50%-150px);   X */
+    /*  calc(50% * 150px); O */
+    /*  calc(50%*150px);   O */
+    /*  calc(50% / 150px); O */
+    /*  calc(50%/150px);   O */
+
+    #child {
+        width: 200px;
+        height: 150px;
+        background-color: rgba(220, 20, 60, 0.4);
+        position: absolute;
+        top: 10px;
+        left: 50px;
+
+    }
+</style>
+
+<body>
+    <div id="parent">
+        <p>블럭요소 p</p>
+        <div id="child">#child</div>
+    </div>
+</body></html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>레이아웃</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background-image: url(http://wooreeweb.com/img/grid.gif);
+    }
+
+    p {
+        height: 50px;
+        background-color: rgba(255, 215, 0, 0.3);
+    }
+
+    #box {
+        width: 200px;
+        height: 150px;
+        background-color: rgba(220, 20, 60, 0.4);
+/************************************************************/
+        position: static;
+/*포지션이 static 이면 위치이동 속성을 쓸 수 없다 (태그의 기본속성 값)*/
+        top: 50px;
+        left: 100px;
+    }
+    /* 위치이동속성 : top bttom left right (기준위치) 이동방향은 기준위치에서 안쪽으로 이동한다 *음수값은 반대*/
+</style>
+
+<body>
+    <p>블럭요소 p</p>
+    <div id="box">#box</div>
+</body></html>

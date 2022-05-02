@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>둥근모서리</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background-image: url(http://wooreeweb.com/img/grid.gif);
+    }
+
+    div {
+        width: 200px;
+        height: 100px;
+        margin: 50px;
+        background-color: rgba(255, 210, 0, 0.3);
+        border: 10px solid black;
+        background-image: url(http://wooreeweb.com/img/lime1.png);
+        background-size: cover;
+        background-position: center;
+        border-color: transparent;
+    }
+
+    .box1 {
+        border-radius: 50%/10px;
+    }
+
+    /*모든가로방향/모든세로방향*/
+    .box2 {
+        border-radius: 100%/50px;
+    }
+
+    .box3 {
+        border-top-left-radius: 100px 50px;
+    }
+
+    .box4 {
+        border-top-right-radius: 200px 100px;
+    }
+
+    .box5 {
+        border-bottom-right-radius: 100% 50%;
+    }
+</style>
+
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+    <div class="box5"></div>
+</body></html>

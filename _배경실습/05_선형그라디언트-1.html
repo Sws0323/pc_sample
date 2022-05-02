@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>그라디언트</title>
+</head>
+<style>
+    div {
+        width: 600px;
+        height: 400px;
+        background-color: orange;
+    }
+
+    div {
+        background-image: linear-gradient(red, yellow);
+    }
+</style>
+
+<body>
+    <div></div>
+    <fieldset>
+        <legend>그라디언트</legend>
+        <h3>문법</h3>
+        <p>background-image: Linear-gradient([방향,]색1, 색2, ..., 색n)</p>
+        <hr>
+        <h3>호환 브라우저</h3>
+        <ul>
+            <li>크롬 : 26+</li>
+            <li>파이어폭스 : 16+</li>
+            <li>사파리 : 6.1+</li>
+            <li>익스프롤러 : 10+</li>
+            <li>오페라 : 12.1+</li>
+        </ul>
+        <h3>구버전을 위한 제조사 접두어(vendor prefix)</h3>
+        <p>/* 사파리, 크롬 */background-image: -webkit-Linear-gradient{red, yellow};</p>
+        <p>/* 파이어 폭스*/background-image: -moz-Linear-gradient{red, yellow};</p>
+        <p>/* 오페라 */background-image: -o-Linear-gradient{red, yellow};</p>
+        <p>/* 익스프롤러 */background-image: -ms-Linear-gradient{red, yellow};</p>
+        <p>/* 표준 */background-image: Linear-gradient{red, yellow};</p>
+    </fieldset>
+</body></html>

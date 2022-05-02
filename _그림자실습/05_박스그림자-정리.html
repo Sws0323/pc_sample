@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>05_박스그림자-정리1</title>
+</head>
+<style>
+    div{width: 100px; height: 100px; margin: 10px;
+    border: 1px solid orangered; float: left;}
+    .box1{box-shadow: 5px 5px 10px #888;}
+    .box2{box-shadow: 5px 5px 10px #888 inset;}
+    .box3{box-shadow: -5px -5px 10px #888;}
+    .box4{box-shadow: -5px -5px 10px #888 inset;}
+/*    box-shadoow: x방향 y방향 흐림정도(blur) 그림자색상 [inset] inset - 내부 그림자, 맨 앞 또는 맨 뒤에 작성*/
+    </style>
+    
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+</body>
+</html>

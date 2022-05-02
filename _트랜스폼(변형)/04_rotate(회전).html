@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>04_rotate(회전)</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    body{
+        background: url(http://wooreeweb.com/img/grid.gif);
+    }
+    div{
+        width: 200px; height: 200px; box-sizing: border-box;
+        margin: 100px; float: left; border: 5px solid #f00;
+    }
+    div p{
+        width: 100%; height: 100%; background: blue; opacity: 0.3;
+    }
+    </style>
+    <style>
+        div:nth-child(1) p {
+            transform:  rotate(15deg);
+        }
+        div:nth-child(2) p {
+            transform: rotate(45deg);
+        }
+        div:nth-child(3) p {
+            transform: rotate(-30deg);
+        }
+    </style>
+<body>
+    <div>
+        <p></p>
+    </div>
+    <div>
+        <p></p>
+    </div>
+    <div>
+        <p></p>
+    </div>
+</body></html>
